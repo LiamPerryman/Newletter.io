@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper loading-opacity hidden">
+        <div class="newsletter-container">
+          <!-- Sign-up form start -->
+          <div class="left-column">
+            <h2 class="header">Stay updated!</h2>
+            <p class="header-paragraph">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <div class="list-row">
+              <ul>
+                <li class="list">
+                  <span class="list-img"
+                    ><img src="./assets/images/icon-list.svg" alt="" /></span
+                  >Product discovery and building what matters
+                </li>
+                <li class="list">
+                  <span class="list-img"
+                    ><img src="./assets/images/icon-list.svg" alt="" /></span
+                  >Measuring to ensure updates are a success
+                </li>
+                <li class="list">
+                  <span class="list-img"
+                    ><img src="./assets/images/icon-list.svg" alt=""
+                  /></span>
+                  And much more!
+                </li>
+              </ul>
+            </div>
+            <form class="form" action="">
+              <div class="email-text-container">
+                <p class="email-p">Email address</p>
+                <p class="invalid-email hidden">Valid email required</p>
+              </div>
+              <input
+                class="email-input valid"
+                type="email"
+                placeholder=" email@company.com"
+                required
+              />
+              <button type="button" value="sent" class="btn">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+          <div class="right-column">
+            <div class="deskop-img">
+              <img
+                class="column-img"
+                src="./assets/images/illustration-sign-up-desktop.svg"
+                alt=""
+              />
+            </div>
+            <div class="mobile-image hidden">
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Sign-up form end -->
+
+          <!-- Loading page -->
+        </div>
+      </div>
+      <div class="loading show">
+        <h2 class="loading-text">L</h2>
+        <h2 class="loading-text">o</h2>
+        <h2 class="loading-text">a</h2>
+        <h2 class="loading-text">d</h2>
+        <h2 class="loading-text">i</h2>
+        <h2 class="loading-text">n</h2>
+        <h2 class="loading-text">g</h2>
+        <h2 class="loading-text">.</h2>
+        <h2 class="loading-text">.</h2>
+        <h2 class="loading-text">.</h2>
+      </div>
+
+      <!-- Success message start -->
+      <div class="thanks-container hidden">
+        <img src="./assets/images/icon-list.svg" alt="" />
+        <h2 class="thanks-header" style="font-size: 5.6rem; color: #242742">
+          Thanks for subscribing!
+        </h2>
+        <p class="thanks-p" style="font-size: 1.6rem">
+          A confirmation email has been sent to
+          <span class="comp-email">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button type="button" value="sent" class="btn">Dismiss message</button>
+      </div>
+      <!-- Success message end -->
+
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>
